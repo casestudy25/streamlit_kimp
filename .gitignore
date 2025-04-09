@@ -1,0 +1,21 @@
+# Python 캐시 파일
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 가상환경 (로컬 전용, Git에 올리지 않음)
+.venv/
+venv/
+
+# 환경 변수 파일 (API 키, 비밀 정보 등)
+.env
+
+# PyCharm 설정 폴더 (개인 설정이라서 공유 X)
+.idea/
+
+# 로그 파일
+*.log
+
+# Mac, Windows 시스템 파일 (선택)
+.DS_Store
+Thumbs.db
