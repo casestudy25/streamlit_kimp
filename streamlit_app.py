@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
 
+# 맨 위 앵커
+st.markdown("<div id='top-anchor'></div>", unsafe_allow_html=True)
+
 st.title("👁️ 로그 뷰어")
 
 # 날짜 입력
@@ -12,7 +15,6 @@ st.markdown("[맨 아래로 이동](#bottom-anchor)")
 # 새로 불러오기 버튼
 if st.button("로그 불러오기"):
     try:
-        # 쿼리 파라미터 구성
         if date_input.strip():
             query = {"date": date_input.strip()}
         else:
@@ -34,4 +36,4 @@ if st.button("로그 불러오기"):
 
 # 맨 아래 앵커 + 맨 위로 이동 링크
 st.markdown("<div id='bottom-anchor'></div>", unsafe_allow_html=True)
-st.markdown("[맨 위로 이동](#log-date-input)")
+st.markdown("[맨 위로 이동](#top-anchor)")
