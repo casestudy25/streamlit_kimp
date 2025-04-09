@@ -4,7 +4,7 @@ import requests
 st.title("🪵 실시간 로그 뷰어")
 
 # 날짜 입력
-date_input = st.text_input("날짜 입력 (예: 250408)", "")
+date_input = st.text_input("날짜 입력 (예: 250408)", "", key="log_date_input")
 
 # 맨 아래로 이동 링크
 st.markdown("[맨 아래로 이동](#bottom-anchor)")
